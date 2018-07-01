@@ -27,7 +27,7 @@ public class Main {
     static int count(String s) {
         int count = 0;
         int temp = 1;
-        int temp1 = 0;
+        int countStr = 0;
 
         char c;
         if (s.length() == 0) {
@@ -39,9 +39,9 @@ public class Main {
                     count++;
                 }
                 else if (c == '\n'){
-                    count = count - temp1;
+                    count = count - countStr;
                     System.out.println("Результат для строки " + temp + " = " + count);
-                    count = temp1;
+                    count = countStr;
                     temp++;
                 }
             }
